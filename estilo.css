@@ -56,8 +56,7 @@ background-color: rgb(216, 216, 216);
  .enlaces li a :hover{
 	color: rgb(255, 255, 255);
  }
-  /* ANIMACION PARA EL TITULO DEL MENU */
-  @keyframes moverTitulo {
+ @keyframes moverTitulo {
 	0%{
 		transform: translatex(0%) translatey(0%);
 		transform: scale(1);
@@ -66,10 +65,6 @@ background-color: rgb(216, 216, 216);
 		transform: translatex(25%) translatey(25%);
 		transform: scale(1.01);
 	 }
-	/* 50%{
-		transform: translatex(50%) translatey(50%);
-		transform: scale(1.50);
-	} */
 	 
 	75%{
 		transform: translatex(75%) translatey(75%);
