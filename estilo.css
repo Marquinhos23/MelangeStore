@@ -188,6 +188,7 @@ h2 {
 	font-size: 2rem;
 	text-align: center;
 	margin: 1rem;
+	padding: 1rem;
 }
 h4{
 	font-family:'Oswald', sans-serif;
@@ -228,11 +229,11 @@ footer {
 	font-style: italic;
 	color: rgb(0, 0, 0);
 }
-.mainCompleto{
+/* .mainCompleto{
 	min-height: 80vh;
 	background: url(./Melange.store/Fotos-Beyond-The-Cards-Noviembre-2017-17.jpg) no-repeat center center fixed;
 	background-size: cover;
-}
+} */
 /* PERSONALIZANDO SECCION DE CONTACTO */
 /* .mainContacto{
 	min-height: 80vh;
@@ -260,8 +261,23 @@ footer {
 	width: 100%;
 }
 /* PERSONALIZANDO SECCION DE PREGUNTAS */
-.mainPreguntas {
+/* .mainPreguntas {
 min-height: 80vh;
 background: url(./Melange.store/modelo-inconsútil-con-los-rhombus-fondo-del-vector-beige-ligero-76205662.jpg) no-repeat center center fixed;
 background-size: cover;
+} */
+.mainPreguntas {
+	background-color:rgb(206, 206, 206, 40%) ;
+}
+.preguntas {
+	display: flex;
+	display: block;
+	justify-content: space-around;
+}
+.preguntas h5 {
+	margin: 0px;
+}
+.preguntas p{
+ margin: 2;
+ padding: 0 1rem;
 }
