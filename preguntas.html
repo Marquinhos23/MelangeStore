@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes l MelangeStore</title>
 	<link rel="stylesheet" href="estilo.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
 	<header>
@@ -50,39 +52,42 @@
 <h5>COMPRÉ UN PRODUCTO Y ME DIJERON QUE NO TIENEN STOCK ¿QUÉ HAGO?</h4>
 <p>Esto es inusual, pero puede ocurrir debido a la alta demanda online. Nuestro equipo de venta se va a comunicar con vos para brindarte una solución.</p>
 <h5>¿COMO SABER CUALES SON MIS MEDIDAS DE JEANS?</h4>
-	<table border="1" cellpadding=40px cellspacing="5px">
-		<tr>
-			<th>Talle</th>
-			<th>Cont de Cintura</th>
-			<th>Cont de Cadera</th>
-			<th>Largo</th>
-		</tr>
-		<tr>
-			<td>38</td>
+	<div class="tabla">
+	<table class="table table-dark table-hover"
+		  <tr>
+			<th scope="col">Talle</th>
+			<th scope="col">Cont de Cintura</th>
+			<th scope="col">Cont de Cadera</th>
+			<th scope="col">Largo</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<th scope="row">38</th>
 			<td>66cm</td>
 			<td>98cm</td>
 			<td>102cm</td>
-		</tr>
-		<tr>
-			<td>40</td>
+		  </tr>
+		  <tr>
+			<th scope="row">40</th>
 			<td>74cm</td>
 			<td>108cm</td>
 			<td>103cm</td>
-		</tr>
-		<tr>
-			<td>42</td>
-			<td>78cm</td>
+		  </tr>
+		  <tr>
+			<th scope="row">42</th>
+			<td colspan=>78cm</td>
 			<td>112cm</td>
 			<td>103cm</td>
-		</tr>
-
-	</table>
-    </section>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
 </main>
 <footer>
 	<H4>Melange Store</H4>
 	<h6>Nos especializamos en tener productos de excelente calidad y 100% fiables</h6>
 </footer>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

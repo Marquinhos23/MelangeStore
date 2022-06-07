@@ -234,11 +234,11 @@ footer {
 	background-size: cover;
 }
 /* PERSONALIZANDO SECCION DE CONTACTO */
-.mainContacto{
+/* .mainContacto{
 	min-height: 80vh;
 	background: url(./Melange.store/el-fondo-para-escribir-70433842.jpg) no-repeat center center fixed;
 	background-size: cover;
-} 
+}  */
 .contacto {
 	display: flex;
 	flex-direction: column;
