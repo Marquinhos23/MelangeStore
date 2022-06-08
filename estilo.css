@@ -3,6 +3,8 @@
 	 padding: 0;
 	 box-sizing: border-box;
  }
+                /* VOY ARRANCAR PRIMERO MODIFICANDO EL MENU Y EL FOOTER */
+
  /* PERSONALIZANDO EL MENU */
  .menu{
 	 width: 100%;
@@ -70,18 +72,41 @@ background-color: rgb(216, 216, 216);
 		transform: translatex(75%) translatey(75%);
 		transform: scale(1.75);
 	}
-	/* 100%{ 
-	transform: translatex(100%) translatey(100%);
-	transform: scale(2);
-	} */
 }
- /* PERSONALIZANDO FONDO DE INDEX */
+/* PERSONALIZANDO FOOTER */
+footer {
+	background-color: rgb(206, 206, 206);
+}
+footer h4{
+	font-family:'Oswald', sans-serif;
+	font-size: 2rem;
+	margin:0;
+	padding:1rem;
+	text-align: center;
+}
+footer p{
+	font-family:'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	margin:0;
+	padding: 1rem;
+	text-align: center;
+}
+	/* ACA MODIFICO OTRA VEZ EL FOOTER PARA LAS SECCIONES EN LAS CUALES NO QUEDA ABAJO DEL TODO */
+.footerAbajo {
+	background-color: rgb(206, 206, 206);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+ /* PERSONALIZANDO SECCION INDEX */
+
  .contenedor{
 	 min-height: 100vh;
 	 background: url(./Melange.store/textura-inconsútil-de-la-ropa-fondo-para-la-tienda-62505760.jpg) no-repeat center center fixed;
 	 background-size: cover;
  } 
- /* PERSONALIZANDO MAIN DE INDEX CON GRID */
  .contenedor{
 	 display: grid;
 	 gap: 20px;
@@ -113,14 +138,18 @@ background-color: rgb(216, 216, 216);
 .img c{
 	grid-area:c ;
 }
+
 /* EN EL FUTURO ME GUSTARIA TENER FOTOS MAS PROFESIONALES Y PODER QUE LAS FOTOS TE LLEVEN A UNA SECCION */
-/* PERSONALIZANDO FONDO DE GALERIA */
-.container{
+
+/* PERSONALIZANDO SECCION GALERIA */
+
+.galeria{
 	min-height: 100vh;
 	background: url(./Melange.store/mejores-apps-para-comprar-ropa-Portada.jpg) no-repeat center center fixed;
 	background-size: cover;
+	padding: 3rem;
 }
-/* PERSONALIZANDO MAIN DE GALERIA CON GRID */
+
 .container{
 	display: grid;
 	grid-template-areas:
@@ -150,7 +179,9 @@ background-color: rgb(216, 216, 216);
 .D {
 	grid-area: d;
  }
+
  /* PERSONALIZANDO TAMAÑO DE CADA IMAGEN */
+
  .A img {
 	height: 750px;
 }
@@ -169,7 +200,9 @@ background-color: rgb(216, 216, 216);
 	width: 80%;
 	object-fit: cover;
 }
+
 /* AGREGANDO TRANSFORMACIONES A LAS IMAGENES */
+
 .A:hover{
 	transform: scale(1.1);
 }
@@ -182,102 +215,67 @@ background-color: rgb(216, 216, 216);
 .D:hover{
 	transform: scale(1.1);
 }
- /* PERSONALIZANDO LOS TITULOS Y PARRAFOS */
-h2 {
+
+p{
+	font-family:'Oswald', sans-serif;
+
+}
+
+/* PERSONALIZANDO SECCION DE REGISTRO */
+
+.registro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+	font-family: 'Oswald', sans-serif;
+	padding: 1rem;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(0, 0, 0);
+}
+.registro h2 {
 	font-family:'Oswald', sans-serif;
 	font-size: 2rem;
 	text-align: center;
 	margin: 1rem;
 	padding: 1rem;
 }
-h4{
-	font-family:'Oswald', sans-serif;
-	font-size: 2rem;
-	text-align: center;
-	margin: 6px;
-}
-h5{
-	font-family:'Oswald', sans-serif;
-	font-size: 1rem;
-	margin: 10px;
-	padding: 1rem;
-}
-h6{
-	font-family:'Oswald', sans-serif;
-	font-style:italic;
-	font-size: 1rem;
-	text-align: center;
-}
-p{
-	font-family:'Oswald', sans-serif;
 
-}
-/* PERSONALIZANDO FOOTER */
-footer {
-	background-color: rgb(206, 206, 206);
-}
-/* PERSONALIZANDO SECCION DE REGISTRO */
-.registro {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	list-style-type: none;
-	background-color:rgb(206, 206, 206, 0%);
-	font-family: 'Oswald', sans-serif;
-	padding: 50px;
-	font-weight: bold;
-	font-style: italic;
-	color: rgb(0, 0, 0);
-}
-/* .mainCompleto{
-	min-height: 80vh;
-	background: url(./Melange.store/Fotos-Beyond-The-Cards-Noviembre-2017-17.jpg) no-repeat center center fixed;
-	background-size: cover;
-} */
 /* PERSONALIZANDO SECCION DE CONTACTO */
-/* .mainContacto{
-	min-height: 80vh;
-	background: url(./Melange.store/el-fondo-para-escribir-70433842.jpg) no-repeat center center fixed;
-	background-size: cover;
-}  */
+
 .contacto {
-	display: flex;
-	flex-direction: column;
-	align-items:center ;
 	list-style-type: none;
-	background-color:rgb(206, 206, 206, 0%);
 	margin: 10px;
 	padding: 20px;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
-	font-style: italic;
-	color: rgb(0, 0, 0);
 }
-/* ACA MODIFICO OTRA VEZ EL FOOTER PARA LAS SECCIONES EN LAS CUALES NO QUEDA ABAJO DEL TODO */
-.footerAbajo {
-	background-color: rgb(206, 206, 206);
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+.contacto h2 {
+	font-family:'Oswald', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
 }
+
 /* PERSONALIZANDO SECCION DE PREGUNTAS */
-/* .mainPreguntas {
-min-height: 80vh;
-background: url(./Melange.store/modelo-inconsútil-con-los-rhombus-fondo-del-vector-beige-ligero-76205662.jpg) no-repeat center center fixed;
-background-size: cover;
-} */
-.mainPreguntas {
-	background-color:rgb(206, 206, 206, 40%) ;
+
+.preguntas h2 {
+	font-family:'Oswald', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
 }
-.preguntas {
-	display: flex;
-	display: block;
-	justify-content: space-around;
-}
-.preguntas h5 {
-	margin: 0px;
+.preguntas h6 {
+	font-family:'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 1rem;
+	padding: 0 2rem;
 }
 .preguntas p{
  margin: 2;
- padding: 0 1rem;
+ padding: 0 3rem;
 }
