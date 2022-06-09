@@ -1,11 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* VOY ARRANCAR PRIMERO MODIFICANDO EL MENU Y EL FOOTER */
-/* PERSONALIZANDO EL MENU */
 .menu {
   width: 100%;
   background-color: black;
@@ -58,6 +51,11 @@
   75% {
     transform: translatex(75%) translatey(75%);
     transform: scale(1.75); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /* PERSONALIZANDO FOOTER */
 footer {
