@@ -39,7 +39,7 @@
     color: white;
     font-size: 13px; }
     .menu a:hover {
-      color: white; }
+      color: black }
 
 @keyframes moverTitulo {
   0% {
@@ -95,7 +95,9 @@ footer p {
   justify-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr, 1fr, 1fr;
-  grid-area: " a " " b " " c "; }
+  grid-area: " a "
+ " b "
+ " c "; }
 
 .contenedor img {
   width: 600px;
@@ -127,7 +129,9 @@ footer p {
 
 .container {
   display: grid;
-  grid-template-areas: "a b" "a c" "a d";
+  grid-template-areas: "a b"
+ "a c"
+ "a d";
   grid-template-rows: 1fr, 1fr, 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 10px;
