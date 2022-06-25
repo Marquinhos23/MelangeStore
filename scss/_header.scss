@@ -1,65 +1,51 @@
 .menu{
     width: 100%;
+    height: 80px;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
     .menutitulo{
-    font-family:'Oswald', sans-serif;
-    color: white;
-    font-size: 2rem;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    animation-name: moverTitulo;
-    animation-duration: 1s;
-    animation-timing-function: 1;
-    animation-direction: reverse;
-    &:hover {
-      color : white;
-    }
-    }
-    .enlaces {
-        list-style-type: none;
-        background-color: rgb(0, 0, 0);
-        margin: 10px;
-        font-family: 'Oswald', sans-serif;
-    }
-    li {
-        display: inline-block;
-        text-align:center;
-        margin: 5px 10px;
-        background-color:rgb(0, 0, 0);
-        padding: 10px;
-        &:hover{
-            color: rgb(0, 0, 0);
-            background-color: rgb(216, 216, 216);
+        font-family:'Oswald', sans-serif;
+        color: white;
+        font-size: 2rem;
+        width: 30%;
+        margin-top: 16px;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            color :$colorGris;
             }
     }
-    a{
-        text-decoration: none;
-        display: inline-block;
-        color: black
-        font-size: 13px;
-        &:hover {
-            color: rgb(255, 255, 255);
+    .enlaces{
+        list-style-type: none;
+        background-color: rgb(0, 0, 0);
+        font-family: 'Oswald', sans-serif;
+        margin: 25px 50px;
+        li{
+            display: inline-block;
+            text-align:center;
+            justify-content: center;
+            margin: 5px 10px;
+            background-color:rgb(0, 0, 0);
+            &:hover{
+                color: rgb(0, 0, 0);
+                background-color: rgb(216, 216, 216);
+            }
+            a{
+                text-align: center;
+                justify-items: center;
+                text-decoration: none;
+                display: inline-block;
+                color: white;
+                font-size:1rem;
+                &:hover{
+                    color: black;
+                }
+
+            }
+
         }
     }
-}
-
-@keyframes moverTitulo {
-   0%{
-       transform: translatex(0%) translatey(0%);
-       transform: scale(1);
-   }
-    25%{
-       transform: translatex(25%) translatey(25%);
-       transform: scale(1.01);
-    }
-    
-   75%{
-       transform: translatex(75%) translatey(75%);
-       transform: scale(1.75);
-   }
 }

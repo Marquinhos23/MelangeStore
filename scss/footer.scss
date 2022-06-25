@@ -1,0 +1,25 @@
+footer {
+    background-color: $colorGris;
+     h4{
+        font-family:'Oswald', sans-serif;
+        font-size: 2rem;
+        margin:0;
+        padding:1rem;
+        text-align: center;
+     }
+     p{
+        font-family:'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        margin:0;
+        padding: 1rem;
+        text-align: center;
+     }
+ }
+ 
+ .footerAbajo {
+    background-color: $colorGris;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }

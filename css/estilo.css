@@ -1,6 +1,11 @@
-@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .menu {
   width: 100%;
+  height: 80px;
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -11,184 +16,129 @@
     color: white;
     font-size: 2rem;
     width: 30%;
+    margin-top: 16px;
     justify-content: center;
-    align-items: center;
-    animation-name: moverTitulo;
-    animation-duration: 1s;
-    animation-timing-function: 1;
-    animation-direction: reverse; }
+    align-items: center; }
     .menu .menutitulo:hover {
-      color: white; }
+      color: #cecece; }
   .menu .enlaces {
     list-style-type: none;
     background-color: black;
-    margin: 10px;
-    font-family: 'Oswald', sans-serif; }
-  .menu li {
-    display: inline-block;
-    text-align: center;
-    margin: 5px 10px;
-    background-color: black;
-    padding: 10px; }
-    .menu li:hover {
-      color: black;
-      background-color: #d8d8d8; }
-  .menu a {
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    font-size: 13px; }
-    .menu a:hover {
-      color: black }
+    font-family: 'Oswald', sans-serif;
+    margin: 25px 50px; }
+    .menu .enlaces li {
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      margin: 5px 10px;
+      background-color: black; }
+      .menu .enlaces li:hover {
+        color: black;
+        background-color: #d8d8d8; }
+      .menu .enlaces li a {
+        text-align: center;
+        justify-items: center;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        font-size: 1rem; }
+        .menu .enlaces li a:hover {
+          color: black; }
 
-@keyframes moverTitulo {
-  0% {
-    transform: translatex(0%) translatey(0%);
-    transform: scale(1); }
-  25% {
-    transform: translatex(25%) translatey(25%);
-    transform: scale(1.01); }
-  75% {
-    transform: translatex(75%) translatey(75%);
-    transform: scale(1.75); } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* PERSONALIZANDO FOOTER */
 footer {
   background-color: #cecece; }
+  footer h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    text-align: center; }
+  footer p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+    text-align: center; }
 
-footer h4 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
-  margin: 0;
-  padding: 1rem;
-  text-align: center; }
-
-footer p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 0;
-  padding: 1rem;
-  text-align: center; }
-
-/* ACA MODIFICO OTRA VEZ EL FOOTER PARA LAS SECCIONES EN LAS CUALES NO QUEDA ABAJO DEL TODO */
 .footerAbajo {
   background-color: #cecece;
   position: absolute;
   bottom: 0;
   width: 100%; }
 
-/* PERSONALIZANDO SECCION INDEX */
-.contenedor {
-  min-height: 100vh;
-  background: url(./Melange.store/textura-inconsútil-de-la-ropa-fondo-para-la-tienda-62505760.jpg) no-repeat center center fixed;
-  background-size: cover; }
-
+/* PERSONALIZANDO MAIN DE INDEX */
 .contenedor {
   display: grid;
   gap: 20px;
   justify-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr, 1fr, 1fr;
-  grid-area: " a "
- " b "
- " c "; }
+  grid-template-areas: " a " " b " " c "; }
+  .contenedor img {
+    width: 600px;
+    height: 750px;
+    border: double 5px;
+    padding: 0;
+    margin-top: 100PX; }
+    .contenedor img:hover {
+      transform: scale(1.2); }
+  .contenedor .img a {
+    grid-area: a; }
+  .contenedor .img b {
+    grid-area: b; }
+  .contenedor .img c {
+    grid-area: c; }
 
-.contenedor img {
-  width: 600px;
-  height: 750px;
-  border: double 5px;
-  padding: 0;
-  margin-top: 100PX;
-  margin-bottom: 100px; }
-
-.contenedor img:hover {
-  transform: scale(1.2); }
-
-.img a {
-  grid-area: a; }
-
-.img b {
-  grid-area: b; }
-
-.img c {
-  grid-area: c; }
-
-/* EN EL FUTURO ME GUSTARIA TENER FOTOS MAS PROFESIONALES Y PODER QUE LAS FOTOS TE LLEVEN A UNA SECCION */
-/* PERSONALIZANDO SECCION GALERIA */
-.galeria {
-  min-height: 100vh;
-  background: url(./Melange.store/mejores-apps-para-comprar-ropa-Portada.jpg) no-repeat center center fixed;
-  background-size: cover;
-  padding: 3rem; }
-
+/* PERSONALIZANDO MAIN DE GALERIA */
 .container {
+  margin: 50px;
   display: grid;
-  grid-template-areas: "a b"
- "a c"
- "a d";
+  grid-template-areas: "a b" "a c" "a d";
   grid-template-rows: 1fr, 1fr, 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 10px;
   grid-column-gap: 10px; }
+  .container .A {
+    grid-area: a; }
+    .container .A img {
+      height: 780px;
+      border: double 5px;
+      padding: 0; }
+      .container .A img:hover {
+        transform: scale(1.1); }
+  .container .B {
+    grid-area: b; }
+    .container .B img {
+      height: 250px;
+      width: 80%;
+      border: double 5px;
+      padding: 0;
+      object-fit: cover; }
+      .container .B img:hover {
+        transform: scale(1.1); }
+  .container .C {
+    grid-area: c; }
+    .container .C img {
+      height: 250px;
+      width: 80%;
+      border: double 5px;
+      padding: 0;
+      object-fit: cover; }
+      .container .C img:hover {
+        transform: scale(1.1); }
+  .container .D {
+    grid-area: d; }
+    .container .D img {
+      height: 250px;
+      width: 80%;
+      border: double 5px;
+      padding: 0;
+      object-fit: cover; }
+      .container .D img:hover {
+        transform: scale(1.1); }
 
-.container img {
-  border: double 5px;
-  padding: 0;
-  margin-left: 100px; }
-
-.A {
-  grid-area: a; }
-
-.B {
-  grid-area: b; }
-
-.C {
-  grid-area: c; }
-
-.D {
-  grid-area: d; }
-
-/* PERSONALIZANDO TAMAÑO DE CADA IMAGEN */
-.A img {
-  height: 750px; }
-
-.B img {
-  height: 250px;
-  width: 80%; }
-
-.C img {
-  height: 250px;
-  width: 80%;
-  object-fit: cover; }
-
-.D img {
-  height: 250px;
-  width: 80%;
-  object-fit: cover; }
-
-/* AGREGANDO TRANSFORMACIONES A LAS IMAGENES */
-.A:hover {
-  transform: scale(1.1); }
-
-.B:hover {
-  transform: scale(1.1); }
-
-.C:hover {
-  transform: scale(1.1); }
-
-.D:hover {
-  transform: scale(1.1); }
-
-p {
-  font-family: 'Oswald', sans-serif; }
-
-/* PERSONALIZANDO SECCION DE REGISTRO */
+/* PERSONALIZANDO MAIN DE REGISTRO */
 .registro {
   display: flex;
   flex-direction: column;
@@ -199,30 +149,30 @@ p {
   font-weight: bold;
   font-style: italic;
   color: black; }
+  .registro h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem; }
+  .registro p {
+    font-family: 'Oswald', sans-serif; }
 
-.registro h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 1rem;
-  padding: 1rem; }
-
-/* PERSONALIZANDO SECCION DE CONTACTO */
+/* PERSONALIZANDO MAIN DE CONTACTO */
 .contacto {
   list-style-type: none;
   margin: 10px;
   padding: 20px;
   font-family: 'Oswald', sans-serif;
   font-weight: bold; }
+  .contacto h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem; }
 
-.contacto h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 1rem;
-  padding: 1rem; }
-
-/* PERSONALIZANDO SECCION DE PREGUNTAS */
+/* PERSONALIZANDO MAIN DE PREGUNTAS */
 .preguntas h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
@@ -238,8 +188,9 @@ p {
   padding: 0 2rem; }
 
 .preguntas p {
+  font-family: 'Oswald', sans-serif;
   margin: 2;
   padding: 0 3rem; }
 
-.tabla {
+.preguntas .tabla {
   padding: 3rem; }
